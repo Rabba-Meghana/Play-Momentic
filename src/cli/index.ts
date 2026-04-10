@@ -27,7 +27,7 @@ program
   .description("Convert a Playwright .spec.ts file to Momentic YAML")
   .option("-o, --output <dir>", "Output directory", "./momentic-tests")
   .option("-k, --key <key>", "Groq API key (or set GROQ_API_KEY env var)")
-  .option("-m, --model <model>", "Groq model to use", "llama3-70b-8192")
+  .option("-m, --model <model>", "Groq model to use", "llama-3.3-70b-versatile")
   .option("--no-html", "Skip generating the HTML report")
   .option("--no-yaml", "Skip generating individual YAML files")
   .action(async (file: string, options: any) => {

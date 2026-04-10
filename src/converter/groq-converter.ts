@@ -71,7 +71,7 @@ Output ONLY the Momentic YAML, no explanations.`;
 export async function convertTestWithGroq(
   test: PlaywrightTest,
   apiKey: string,
-  model: string = "llama3-70b-8192"
+  model: string = "llama-3.3-70b-versatile"
 ): Promise<ConversionResult> {
   const groq = new Groq({ apiKey });
 
