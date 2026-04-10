@@ -1,0 +1,32 @@
+{
+  "name": "play-to-momentic",
+  "version": "1.0.0",
+  "description": "Convert Playwright tests to Momentic YAML using Groq AI — with a beautiful report UI",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "play-to-momentic": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc && npm run build:web",
+    "build:cli": "tsc",
+    "build:web": "cd web && npm run build",
+    "dev:web": "cd web && npm run dev",
+    "convert": "ts-node src/cli/index.ts",
+    "start": "node dist/cli/index.js"
+  },
+  "dependencies": {
+    "@ts-morph/common": "^0.22.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "groq-sdk": "^0.3.3",
+    "js-yaml": "^4.1.0",
+    "ora": "^5.4.1",
+    "ts-morph": "^21.0.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  }
+}

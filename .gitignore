@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.next/
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+momentic-tests/
+demo-output/
+*.html.report
+.DS_Store
